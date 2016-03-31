@@ -42,7 +42,6 @@ rainbow = [
 ]
 
 rainbow.each do |color|
-  # puts "#{color.key} colorize(rgb[:r],rgb[:g],rgb[:b])"
   color_name = color.keys.join
   color_rgb = color.values.pop
   puts Rainbow(color_name).color(color_rgb[:r], color_rgb[:g], color_rgb[:b])
